@@ -4,7 +4,7 @@ import './App.css';
 import { 
   DefaultButton, 
   PrimaryButton, 
-  Dialog } from '@fluentui/react';
+  Dialog} from '@fluentui/react';
 import { useBoolean } from '@fluentui/react-hooks';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         </div>
       <header className="App-header">
         <p>
-          Test focus trap with iframe modal
+          Test focus trap with iframe modal. Uses Fluent Dialog (which adds a FocusTrapZone), as well as compiled inner Fluent code including a FocusTrapZone
         </p>
         <PrimaryButton text="open dialog" onClick={toggleHideDialog}/>
       </header>
@@ -37,7 +37,9 @@ function App() {
         onDismiss={toggleHideDialog}
         modalProps={modalProps}
         >
-          <iframe src='../innerFrameContent.html' title='test iframe'/>
+          {/* <iframe src='../innerFrameContent.html' title='test basic iframe'/> */}
+          {/* <iframe src='../innerFrameContentFocusTrap.html' title='test innerfocustrap iframe'/> */}
+          <iframe src='../compiled_fluent_focusTrapZoneInner.html' title='test innerfocustrap iframe w compiled fluent content'/>
       </Dialog>
     </div>
   );

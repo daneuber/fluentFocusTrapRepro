@@ -44,3 +44,9 @@
   background-color: red;
 }
 
+.inneriframebtns button.ms-Button:focus,
+.inneriframebtns button.ms-Button:hover
+ {
+  background-color: red;
+}
+
