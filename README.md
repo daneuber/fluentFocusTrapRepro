@@ -5,7 +5,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Demos issue of Fluent [Dialog](https://developer.microsoft.com/en-us/fluentui#/controls/web/dialog) / [FocusTrap](https://developer.microsoft.com/en-us/fluentui#/controls/web/focustrapzone) with inner iframe element not properly trapping focus
 
 Use `npm start` to launch repro
-
-https://user-images.githubusercontent.com/22989057/223813158-b035b696-a380-4f52-81f9-e568de66a9ba.mp4
-
-![image](https://user-images.githubusercontent.com/22989057/223816565-47a32681-6cb3-4db8-a637-85e1e78649ec.png)
